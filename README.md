@@ -14,6 +14,7 @@ A small application containing the following online store functionality:
     - search for goods by keywords  
 
 *When the page is reloaded, the items in the cart are saved.
+**Figma template: https://www.figma.com/file/TF8EyUpLTXBeZjkXQljYxz/%D0%A2%D0%97?node-id=0%3A1
 
 
 ## Project Setup
