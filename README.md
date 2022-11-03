@@ -1,5 +1,7 @@
 # Online shop example
 
+    Vue3, Vuex, Composition API, Axios
+
 A small application containing the following online store functionality:
 
     - adding goods to the basket;
