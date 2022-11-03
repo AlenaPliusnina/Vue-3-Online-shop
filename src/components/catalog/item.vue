@@ -64,14 +64,18 @@
 
 <template>
   <div class="item">
-    <div class="img-wrapper">
-      <img class="img" :src="itemData.img">
-      <div class="discount" v-if="itemData.discount">Sale -{{ itemData.discount }}%</div>
-    </div>
-    <div class="title">{{ itemData.title }}</div>
-    <div class="price__wrapper">
-      <div class="price">${{ itemData.fullPrice }}</div>
-      <div class="price" v-if="itemData.discountPrice">${{ itemData.discountPrice }}</div>
+    <div>
+       <div class="img-wrapper">
+        <img class="img" :src="itemData.img">
+        <div class="discount" v-if="itemData.discount">Sale -{{ itemData.discount }}%</div>
+      </div>
+      <!-- <div class="description">  -->
+        <div class="title">{{ itemData.title }}</div>
+        <div class="price__wrapper">
+          <div class="price">${{ itemData.fullPrice }}</div>
+          <div class="price" v-if="itemData.discountPrice">${{ itemData.discountPrice }}</div>
+        </div>
+      <!-- </div> -->
     </div>
     <buttonAdd class="btnAdd" @click="addOrRemoveItemInBasket(itemData)" :added="added"/>
   </div>
@@ -89,7 +93,7 @@
     line-height: 19px;
 
     margin-top: 15px;
-    height: 40px;
+    height: 20px;
     overflow: hidden;
   }
 
@@ -113,7 +117,7 @@
   }
 
   .btnAdd {
-    margin-top: 15px;
+    margin-top: 25px;
   }
 
   .img-wrapper {
@@ -134,5 +138,18 @@
     font-weight: 500;
     line-height: 19px;
   }
+
+  // .description {
+  //   // height: 60px;
+  // }
+
+  // .item {
+  //   display: flex;
+  //   flex-direction: column;
+  //   justify-content: space-between;
+  //   max-height: 405px;
+  //   height: 405px;
+  //   align-self: end;
+  // }
   
 </style>
