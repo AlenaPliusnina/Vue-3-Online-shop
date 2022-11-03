@@ -89,6 +89,8 @@
     line-height: 19px;
 
     margin-top: 15px;
+    height: 40px;
+    overflow: hidden;
   }
 
   .price {
